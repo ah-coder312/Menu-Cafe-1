@@ -92,6 +92,7 @@ header {
   cursor: pointer;
   border-radius: 8px;
   font-size: 12px;
+  color: rgb(241, 235, 235) !important;
 }
 
 .cart-popup {
