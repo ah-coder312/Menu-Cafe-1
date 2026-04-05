@@ -86,12 +86,12 @@ header {
 
 .card button {
   margin-top: 10px;
-  padding: 12px;
+  padding: 5px;
   border: none;
-  background: #baeff3;
+  background: #900000;
   cursor: pointer;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .cart-popup {
