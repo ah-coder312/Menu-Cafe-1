@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: aa-codes275/Menu-Cafe
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "settings"
+    label: "الإعدادات"
+    files:
+      - file: "config.js"
+        label: "تعديل الأسعار"
+        name: "prices"
+        fields:
+          - {label: "إسبريسو", name: "espresso", widget: "number"}
+          - {label: "لاتيه", name: "latte", widget: "number"}
+          - {label: "سبانش كاكاو", name: "spanish_cocoa", widget: "number"}
