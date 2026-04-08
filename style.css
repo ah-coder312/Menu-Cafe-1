@@ -11,7 +11,7 @@ background-repeat: no-repeat;
 
 }
 
- /*الخط*/
+
 * {
   font-family: 'El Messiri', sans-serif;
 }
@@ -188,10 +188,10 @@ header {
   margin-left: 5px;
 }
 #backBtn {
-  position: fixed;      /* ثابت في الشاشة */
-  top: 15px;            /* مسافة من فوق */
-  left: 15px;           /* على الشمال */
-  background-color: #291308; /* نفس ألوان الأقسام عشان يتناسق */
+  position: fixed;  
+  top: 15px;           
+  left: 15px;          
+  background-color: #291308; 
   color: white;
   border: none;
   padding: 12px 20px;
@@ -199,14 +199,14 @@ header {
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  z-index: 1001;        /* أعلى من المنتجات */
+  z-index: 1001;        
   display: flex;
   align-items: center;
-  gap: 5px;             /* مسافة بين السهم والنص */
+  gap: 5px;             
 }
 
 #backBtn:hover {
-  background-color: #ffa500; /* تأثير hover */
+  background-color: #ffa500; 
 }
 @media only screen and (max-width: 768px) {
   .categories {
