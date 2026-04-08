@@ -1,8 +1,8 @@
 
 const menuPrices = {
     // الساخن (Hot)
-    espresso: 16,
-    cappuccino: 1,
+    espresso: 120,
+    cappuccino: 150,
     latte: 180,
     caramel_macchiato: 200,
     flat_white: 180,
