@@ -246,7 +246,7 @@ function showCategory(category){
   categoriesSection.style.display = "none";
   productsContainer.innerHTML = "";
   
-  // عرض المنتجات الخاصة بالقسم
+  
   data[category].forEach(item => {
     let optionsHTML = "";
     if(item.options){
@@ -270,7 +270,7 @@ function showCategory(category){
   });
 }
 
-// إضافة المنتج للسلة
+
 function addToCart(btn, name, price, img){
   const card = btn.parentElement;
   const selects = card.querySelectorAll(".item-option");
@@ -280,7 +280,7 @@ function addToCart(btn, name, price, img){
   updateCart();
 }
 
-// تحديث السلة
+
 function updateCart(){
   const container = document.getElementById("cartItems");
   let total = 0;
@@ -304,7 +304,7 @@ function updateCart(){
 
 function removeItem(index){ cart.splice(index,1); updateCart(); }
 
-// أيقونات السلة
+
 const cartPopup = document.getElementById("cartPopup");
 const cartIconTop = document.getElementById("cartIconTop");
 const cartIconBottom = document.getElementById("cartIconBottom");
@@ -314,7 +314,7 @@ cartIconTop.addEventListener("click", ()=>{cartPopup.classList.toggle("show");})
 cartIconBottom.addEventListener("click", ()=>{cartPopup.classList.toggle("show");});
 closeCart.addEventListener("click", ()=>{cartPopup.classList.remove("show");});
 
-// إرسال الطلب  واتساب
+
 document.getElementById("orderBtn").addEventListener("click", ()=>{
   if(cart.length===0){alert("السلة فارغة!"); return;}
   let tableNumber = document.getElementById("tableNumber").value;
@@ -335,8 +335,8 @@ const backSection = document.getElementById("backSection");
 const backBtn = document.getElementById("backBtn");
 
 function showCategory(category){
-  categoriesSection.style.display = "none"; // إخفاء الأقسام بعد فتح اي قسم من الاقسام اسال احمد سمير
-  backSection.style.display = "block";     // اظهار زر العودة
+  categoriesSection.style.display = "none"; 
+  backSection.style.display = "block";     
   productsContainer.innerHTML = "";
 
   data[category].forEach(item => {
@@ -362,9 +362,9 @@ function showCategory(category){
   });
 }
 
-// زر العودة للقائمة الرئيسية
+
 backBtn.addEventListener("click", ()=>{
-categoriesSection.style.display = "block";// إظهار الأقسام
-  backSection.style.display = "none";       // إخفاء زر العودة
-  productsContainer.innerHTML = "";         // مسح المنتجات المعروضة
+categoriesSection.style.display = "block";     
+  backSection.style.display = "none";       
+  productsContainer.innerHTML = "";         
 });
